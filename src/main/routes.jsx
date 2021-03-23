@@ -11,5 +11,4 @@ export default props => (
         <Route exact path='/about' component={About} />
         <Redirect from='*' to='/todos'/>
     </Switch>
-    
 )
