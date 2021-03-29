@@ -39,6 +39,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "promise": "^8.1.0",
@@ -47,5 +48,7 @@
     "redux-multi": "^0.1.12",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0"
+=======
+>>>>>>> 5c46c9faf485a8648943b4c46c1e03a8098c55a6
   }
 }

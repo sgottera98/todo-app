@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
@@ -7,6 +8,12 @@ import '../template/custom.css'
 import {markedAsDone, markedAsPending, remove} from './todoActions'
 
 const TodoList = props => {
+=======
+import IconButton from '../template/iconButton'
+import '../template/custom.css'
+
+export default props => {
+>>>>>>> 5c46c9faf485a8648943b4c46c1e03a8098c55a6
 
     const renderRows = () => {
         const list = props.list || []
@@ -16,11 +23,19 @@ const TodoList = props => {
                 <td>
                     <div className="btnsTodoList">
                         <IconButton style='success' icon='check' hide={todo.done}
+<<<<<<< HEAD
                             onClick={() => props.markedAsDone(todo)}/>
                         <IconButton style='warning' icon='undo' hide={!todo.done}
                             onClick={() => props.markedAsPending(todo)}/>
                         <IconButton style='danger' icon='trash-o' hide={!todo.done}
                             onClick={() => props.remove(todo)}  />
+=======
+                            onClick={() => props.handleMarkAsDone(todo)}/>
+                        <IconButton style='warning' icon='undo' hide={!todo.done}
+                            onClick={() => props.handleMarkAsPending(todo)}/>
+                        <IconButton style='danger' icon='trash-o' hide={!todo.done}
+                            onClick={() => props.handleRemove(todo)}  />
+>>>>>>> 5c46c9faf485a8648943b4c46c1e03a8098c55a6
                     </div>
                 </td>
             </tr>
@@ -40,6 +55,7 @@ const TodoList = props => {
             </tbody>
         </table>
     )
+<<<<<<< HEAD
 }
 
 const mapStateToProps = (state) => ({
@@ -50,3 +66,6 @@ const mapDispatchToProps = (dispatch) =>
     bindActionCreators({markedAsDone, markedAsPending, remove}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps) (TodoList)
+=======
+}
+>>>>>>> 5c46c9faf485a8648943b4c46c1e03a8098c55a6

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+<<<<<<< HEAD
 import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux'
 
@@ -22,6 +23,15 @@ ReactDOM.render(
       <App />
     </React.StrictMode>
   </Provider>,
+=======
+import './index.css';
+import App from './main/app';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+>>>>>>> 5c46c9faf485a8648943b4c46c1e03a8098c55a6
   document.getElementById('root')
 );
 
